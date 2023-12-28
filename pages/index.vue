@@ -40,7 +40,7 @@
                             </li>
 
                             <li>
-                                <a href="~/assets/DeveloppeurFullStack_AbdoulRahimBAH_120822.pdf" class="relative inline-flex items-center justify-center gap-x-2 text-gray-600 p-2.5 rounded-lg  active:bg-gray-100 duration-150 group" download="DeveloppeurFullStack_AbdoulRahimBAH.pdf">
+                                <a href="~/assets/DeveloppeurFullStack_AbdoulRahimBAH_28122023.pdf" class="relative inline-flex items-center justify-center gap-x-2 text-gray-600 p-2.5 rounded-lg  active:bg-gray-100 duration-150 group" download="DeveloppeurFullStack_AbdoulRahimBAH.pdf">
                                     <div class="text-gray-500">
                                         <svg class="w-6 h-6 group-hover:text-white" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75v6.75m0 0-3-3m3 3 3-3m-8.25 6a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z"></path>
@@ -84,7 +84,7 @@
                         </div>
 
                         <h1 class="mt-3 text-2xl font-semibold tracking-wide text-zinc-300 sm:text-3xl tracking-wide leading-6">
-                            Développeur web Fullstack Laravel / Vue.JS.
+                            Développeur web Fullstack <span class="bg-sky-700 p-1 opacity-75 -rotate-2 text-sky-200 inline-block">Laravel / Vue.JS</span>.
                         </h1>
 
                         <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
