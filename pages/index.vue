@@ -84,7 +84,7 @@
                         </div>
 
                         <h1 class="mt-3 text-2xl font-semibold tracking-wide text-zinc-300 sm:text-3xl tracking-wide leading-6">
-                            Développeur web Fullstack <span class="bg-sky-700 p-1 opacity-75 -rotate-2 text-sky-200 inline-block">Laravel / Vue.JS</span>.
+                            Développeur web Fullstack <span class="bg-sky-700 p-1 -rotate-2 text-sky-200 inline-block">Laravel / Vue.JS</span>.
                         </h1>
 
                         <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">

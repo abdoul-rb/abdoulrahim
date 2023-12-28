@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Développeur Fullstack Laravel / Vue.JS / Nuxt.JS',
+    title: 'Développeur Fullstack Laravel / Vue.JS',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
