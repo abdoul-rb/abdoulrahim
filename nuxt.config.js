@@ -2,11 +2,12 @@ export default {
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	devtools: { enabled: true },
 	head: {
-		title: 'Développeur Fullstack Laravel / Vue.JS',
+		title: 'Développeur Fullstack PHP Laravel | Vue.JS',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ hid: 'description', name: 'description', content: 'Je suis un développeur Fullstack expérimenté, spécialisé dans l\'écosystème Laravel/PHP et passionné par la création d\'applications web robustes et intuitives' },
+			{ hid: 'description', name: 'description', content: "Je suis un développeur Fullstack expérimenté, spécialisé dans l'écosystème Laravel|PHP et passionné par la création d'applications web robustes et intuitives" },
+			{ hid: 'keywords', name: 'keywords', content: 'Développeur Fullstack, Laravel, PHP, Vue.JS, Nuxt.JS, Tailwind CSS, Alpine.js, Livewire, Typescript' },
 			{ name: 'format-detection', content: 'telephone=no' }
 		],
 		link: [

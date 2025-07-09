@@ -115,7 +115,9 @@ export default {
                 'Vue.JS',
                 'Nuxt.JS',
                 'Tailwind CSS',
-                'Alpine.js'
+                'Alpine.js',
+                'Livewire',
+                'Typescript',
             ]
         }
     }
