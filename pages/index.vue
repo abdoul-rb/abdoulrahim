@@ -74,7 +74,8 @@
                         </h3>
 
                         <div class="mt-6 space-y-3 leading-6">
-                            <li v-for="(skill, index) in skills" class="flex gap-x-2 text-white font-semibold text-sm">
+                            <li v-for="(skill, index) in skills" :key="index"
+                                class="flex gap-x-2 text-white font-semibold text-sm">
                                 <span class="text-sky-600">&#8212;&#8212;</span>
                                 <span class="tracking-wider">{{ skill }}</span>
                             </li>
@@ -104,22 +105,20 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'IndexPage',
-    layout: 'app',
-    data() {
-        return {
-            skills: [
-                'Laravel',
-                'Vue.JS',
-                'Nuxt.JS',
-                'Tailwind CSS',
-                'Alpine.js',
-                'Livewire',
-                'Typescript',
-            ]
-        }
-    }
-}
+<script setup>
+// Définir le layout
+definePageMeta({
+    layout: 'app'
+})
+
+// Données réactives
+const skills = ref([
+    'Laravel',
+    'Vue.JS',
+    'Nuxt.JS',
+    'Tailwind CSS',
+    'Alpine.js',
+    'Livewire',
+    'Typescript',
+])
 </script>

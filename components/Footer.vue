@@ -38,8 +38,6 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'Footer'
-}
+<script setup>
+// Composant Footer - Vue 3 Composition API
 </script>

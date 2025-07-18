@@ -102,85 +102,83 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'Projects',
-    layout: 'app',
-    data() {
-        return {
-            projects: [
-                {
-                    title: 'Doniin.com',
-                    description: "Doniin est une plateforme collaborative qui connecte les particuliers souhaitant envoyer des colis à ceux qui voyagent sur les mêmes itinéraires, principalement en avion.",
-                    link: 'https://doniin.com/',
-                    github: 'https://github.com/abdoul-rb/donii',
-                    stacks: ['Laravel', 'Livewire', 'TailwindCSS', 'Alpine.JS', 'MySQL', 'CI/CD', 'PestPHP']
-                },
-                {
-                    title: "Calculateur d'impôts",
-                    description: "Un simulateur de calcul de l'impôt sur les revenus en France en version simplifiée accessible sur le web depuis n'importe quel appareil.",
-                    link: 'https://calculateur-impot.vercel.app',
-                    github: 'https://github.com/abdoul-rb/calculateur-impot',
-                    stacks: ['Nuxt.Js', 'TailwindCSS', 'Jest', 'Vercel']
-                },
-                {
-                    title: 'UNC Networking',
-                    description: 'Plateforme de mise en relation entre les diplômés et les entreprises sur des offres d\'emplois pour l\'université UNC',
-                    link: 'https://pprod.univers-emploi.org/',
-                    github: 'https://github.com/abdoul-rb/unc-networking',
-                    stacks: ['Laravel', 'Livewire', 'Alpine.JS', 'TailwindCSS', 'MySQL']
-                },
-                {
-                    title: 'Seloger224',
-                    description: 'Site web de petites annonces immobilières en Guinée, servant aussi de SAAS pour les agences immobilières.',
-                    link: 'https://selogger224.com',
-                    github: 'https://github.com/abdoul-rb/seloger-client',
-                    stacks: ['Laravel', 'Nuxt.Js', 'TailwindCSS', 'API REST']
-                },
-                {
-                    title: 'Nomade CRM',
-                    description: 'Site vitrine pour la présentation d\'un CRM pour les entreprises de prestations de services.',
-                    link: 'https://manage-gn.vercel.app/',
-                    github: 'https://github.com/abdoul-rb/manage-crm',
-                    stacks: ['Nuxt.Js', 'Geo API', 'Vercel']
-                },
-                {
-                    title: 'Lafia Immobilier',
-                    description: 'Site web d\'investissement locatif immobilier proposant un simulateur de rentabilité et un panel d\'administration pour les utilisateurs.',
-                    link: 'https://lafia-invest.vercel.app',
-                    github: 'https://github.com/abdoul-rb/lafia-client',
-                    stacks: ['Laravel', 'Nuxt.Js', 'TailwindCSS', 'REST', 'AWS']
-                },
-                {
-                    title: 'Kaminter',
-                    description: 'Création d\'un site vitrine pour une entreprise de prestations de services en bâtiment et d\'import-export.',
-                    link: 'https://kaminter.fr/',
-                    github: 'https://github.com/abdoul-rb/kamainter',
-                    stacks: ['Laravel', 'TailwindCSS', 'Ionos']
-                },
-                {
-                    title: 'Tampon digital',
-                    description: 'Générateur de tampons digitaux au format png pour les entreprises une touche d\'authenticité à vos documents officiels.',
-                    link: 'https://tampon-digital-eight.vercel.app/',
-                    github: 'https://github.com/lafia/tampon-digital',
-                    stacks: ['Nuxt.Js', 'TailwindCSS', 'Vercel', 'Serverless']
-                },
-                {
-                    title: 'IaLearn',
-                    description: 'Plateforme d\'apprentissage en ligne d\'intélligence artificielle pour les étudiants et les professionnels.',
-                    link: 'https://kaminter.fr/',
-                    github: 'https://github.com/abdoul-rb/kamainter',
-                    stacks: ['Nuxt.Js', 'TailwindCSS', 'Vercel', 'Serverless']
-                },
-                {
-                    title: 'Sofa Store',
-                    description: 'Site e-commerce de vente de produits de vidéosurveillance et de domotion en Côté d\'Ivoire.',
-                    link: 'https://sofa-tech.com',
-                    github: 'https://github.com/abdoul-rb/kamainter',
-                    stacks: ['Laravel', 'Lunar', 'TailwindCSS']
-                },
-            ]
-        }
+<script setup>
+// Définir le layout
+definePageMeta({
+    layout: 'app'
+})
+
+// Données réactives
+const projects = ref([
+    {
+        title: 'Doniin.com',
+        description: "Doniin est une plateforme collaborative qui connecte les particuliers souhaitant envoyer des colis à ceux qui voyagent sur les mêmes itinéraires, principalement en avion.",
+        link: 'https://doniin.com/',
+        github: 'https://github.com/abdoul-rb/donii',
+        stacks: ['Laravel', 'Livewire', 'TailwindCSS', 'Alpine.JS', 'MySQL', 'CI/CD', 'PestPHP']
     },
-}
+    {
+        title: "Calculateur d'impôts",
+        description: "Un simulateur de calcul de l'impôt sur les revenus en France en version simplifiée accessible sur le web depuis n'importe quel appareil.",
+        link: 'https://calculateur-impot.vercel.app',
+        github: 'https://github.com/abdoul-rb/calculateur-impot',
+        stacks: ['Nuxt.Js', 'TailwindCSS', 'Jest', 'Vercel']
+    },
+    {
+        title: 'UNC Networking',
+        description: 'Plateforme de mise en relation entre les diplômés et les entreprises sur des offres d\'emplois pour l\'université UNC',
+        link: 'https://pprod.univers-emploi.org/',
+        github: 'https://github.com/abdoul-rb/unc-networking',
+        stacks: ['Laravel', 'Livewire', 'Alpine.JS', 'TailwindCSS', 'MySQL']
+    },
+    {
+        title: 'Seloger224',
+        description: 'Site web de petites annonces immobilières en Guinée, servant aussi de SAAS pour les agences immobilières.',
+        link: 'https://selogger224.com',
+        github: 'https://github.com/abdoul-rb/seloger-client',
+        stacks: ['Laravel', 'Nuxt.Js', 'TailwindCSS', 'API REST']
+    },
+    {
+        title: 'Nomade CRM',
+        description: 'Site vitrine pour la présentation d\'un CRM pour les entreprises de prestations de services.',
+        link: 'https://manage-gn.vercel.app/',
+        github: 'https://github.com/abdoul-rb/manage-crm',
+        stacks: ['Nuxt.Js', 'Geo API', 'Vercel']
+    },
+    {
+        title: 'Lafia Immobilier',
+        description: 'Site web d\'investissement locatif immobilier proposant un simulateur de rentabilité et un panel d\'administration pour les utilisateurs.',
+        link: 'https://lafia-invest.vercel.app',
+        github: 'https://github.com/abdoul-rb/lafia-client',
+        stacks: ['Laravel', 'Nuxt.Js', 'TailwindCSS', 'REST', 'AWS']
+    },
+    {
+        title: 'Kaminter',
+        description: 'Création d\'un site vitrine pour une entreprise de prestations de services en bâtiment et d\'import-export.',
+        link: 'https://kaminter.fr/',
+        github: 'https://github.com/abdoul-rb/kamainter',
+        stacks: ['Laravel', 'TailwindCSS', 'Ionos']
+    },
+    {
+        title: 'Tampon digital',
+        description: 'Générateur de tampons digitaux au format png pour les entreprises une touche d\'authenticité à vos documents officiels.',
+        link: 'https://tampon-digital-eight.vercel.app/',
+        github: 'https://github.com/lafia/tampon-digital',
+        stacks: ['Nuxt.Js', 'TailwindCSS', 'Vercel', 'Serverless']
+    },
+    {
+        title: 'IaLearn',
+        description: 'Plateforme d\'apprentissage en ligne d\'intélligence artificielle pour les étudiants et les professionnels.',
+        link: 'https://kaminter.fr/',
+        github: 'https://github.com/abdoul-rb/kamainter',
+        stacks: ['Nuxt.Js', 'TailwindCSS', 'Vercel', 'Serverless']
+    },
+    {
+        title: 'Sofa Store',
+        description: 'Site e-commerce de vente de produits de vidéosurveillance et de domotion en Côté d\'Ivoire.',
+        link: 'https://sofa-tech.com',
+        github: 'https://github.com/abdoul-rb/kamainter',
+        stacks: ['Laravel', 'Lunar', 'TailwindCSS']
+    },
+])
 </script>
