@@ -16,9 +16,8 @@
     </div>
 </template>
 
-<script setup>
-import Footer from '@/components/Footer.vue'
-import Sidebar from '@/components/Sidebar.vue'
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 // Variables réactives
 const user = ref(null)
@@ -39,19 +38,19 @@ onBeforeUnmount(() => {
 })
 
 // Méthodes
-const disableCopy = (event) => {
+const disableCopy = (event: Event) => {
     event.preventDefault()
 }
 
-const disablePaste = (event) => {
+const disablePaste = (event: Event) => {
     event.preventDefault()
 }
 
-const disableRightClick = (event) => {
+const disableRightClick = (event: Event) => {
     event.preventDefault()
 }
 
-const disableRightClickSelection = (event) => {
+const disableRightClickSelection = (event: MouseEvent) => {
     if (event.button === 2) {
         event.preventDefault()
     }

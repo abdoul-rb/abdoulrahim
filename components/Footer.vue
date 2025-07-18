@@ -38,6 +38,6 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // Composant Footer - Vue 3 Composition API
 </script>

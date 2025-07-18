@@ -105,14 +105,16 @@
     </div>
 </template>
 
-<script setup>
-// Définir le layout
+<script setup lang="ts">
+import { ref } from 'vue'
+
+// @ts-ignore - definePageMeta est auto-importé par Nuxt 3
 definePageMeta({
     layout: 'app'
 })
 
 // Données réactives
-const skills = ref([
+const skills = ref<string[]>([
     'Laravel',
     'Vue.JS',
     'Nuxt.JS',
