@@ -54,7 +54,7 @@
                     </li>
 
                     <li>
-                        <a href="/assets/DeveloppeurFullStack_AbdoulRahimBAH_28122023.pdf"
+                        <a href="/assets/DeveloppeurFullStack_AbdoulRahimBAH_15072025.pdf"
                             class="relative inline-flex items-center justify-center gap-x-2 text-gray-600 p-2.5 rounded-lg active:bg-gray-100 duration-150 group"
                             download="DeveloppeurFullStack_AbdoulRahimBAH.pdf">
                             <div class="text-gray-500">
