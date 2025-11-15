@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#10172A]">
+    <div class="bg-[#10172A] font-rubik">
         <div class="lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:flex-col">
             <Sidebar />
         </div>
