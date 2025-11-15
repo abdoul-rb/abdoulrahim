@@ -43,14 +43,16 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import type { Project } from '@/types/Project';
+
 // Définir le layout
 definePageMeta({
     layout: 'app'
 })
 
 // Données réactives
-const projects = ref([
+const projects = ref<Project[]>([
     {
         title: 'Doniin.com',
         description: "Doniin est une plateforme collaborative qui connecte les particuliers souhaitant envoyer des colis à ceux qui voyagent sur les mêmes itinéraires, principalement en avion.",
