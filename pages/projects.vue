@@ -19,26 +19,17 @@
             class="pl-20 sm:pl-0 mx-auto max-w-2xl md:max-w-5xl xl:max-w-7xl px-4 sm:px-6 lg:px-8 xl:px-12 mt-24 min-h-screen">
             <div class="max-w-2xl">
                 <h1 class="mt-4 text-3xl font-bold tracking-wide text-zinc-100 sm:text-4xl">
-                    Side projects 🚀.
+                    Projects 🚀.
                 </h1>
 
-                <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                    Durant mon parcours, que ce soit pendant ma formation jusqu'après, j'ai eu l'occasion de travailler
-                    sur différents projets qui m'ont permis d'acquérir de nouvelles compétences et d'en renforcer
-                    d'autres.
-                    Ceux là sont ceux dont je suis le plus fier.
+                <p class="mt-6 text-sm text-zinc-400">
+                    J'aime partir d'une idée simple, créer un prototype, puis intérer.
                 </p>
             </div>
 
-            <div class="mt-10 sm:mt-20">
-                <h1 class="text-xl font-medium tracking-wider text-zinc-100">
-                    Best of
-                </h1>
-
-                <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                    <ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
-                </ul>
-            </div>
+            <ul class="mt-10 sm:mt-20 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
+            </ul>
         </div>
     </div>
 </template>
@@ -107,7 +98,7 @@ const projects = ref<Project[]>([
         description: "Plateforme d'apprentissage en ligne d'intélligence artificielle pour les étudiants et les professionnels.",
         link: 'https://kaminter.fr/',
         github: 'https://github.com/abdoul-rb/kamainter',
-        stacks: ['Nuxt.Js', 'TailwindCSS', 'Vercel', 'Serverless']
+        stacks: ['Nuxt.Js', 'TailwindCSS', 'Vercel', 'Serverless', 'EmailJS']
     },
     {
         title: 'Sofa Store',
