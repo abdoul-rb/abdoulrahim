@@ -1,5 +1,7 @@
 <template>
-    <div>
+    <div class="relative isolate">
+        <BackgroundSVG />
+
         <header class="mx-auto max-w-2xl md:max-w-5xl xl:max-w-7xl px-4 sm:px-6 lg:px-8 xl:px-12">
             <div class="relative flex gap-4">
                 <div class="flex flex-1"></div>
